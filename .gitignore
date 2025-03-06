@@ -1,3 +1,5 @@
+*.geojson
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -11,6 +13,7 @@ __pycache__/
 build/
 develop-eggs/
 dist/
+dist*
 downloads/
 eggs/
 .eggs/
@@ -94,12 +97,6 @@ ipython_config.py
 #   install all needed dependencies.
 #Pipfile.lock
 
-# UV
-#   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#uv.lock
-
 # poetry
 #   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
 #   This is especially recommended for binary packages to ensure reproducibility, and is more
@@ -167,5 +164,28 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-# PyPI configuration file
-.pypirc
+__pycache__
+.DS_Store
+
+*.env-prod*
+#*.zarr
+*.csv
+
+#*.raw
+#*.bot
+#*.idx
+
+.idea
+.pytest_cache
+.coverage
+*.iml
+#.python-version
+target
+coverage.xml
+htmlcov
+dist
+build
+*.egg-info
+/setup.py
+*.spec
+
