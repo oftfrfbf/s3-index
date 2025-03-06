@@ -1,6 +1,6 @@
 import os
 from collections.abc import Generator
-from typing import Optional
+# from typing import Optional
 
 import boto3
 from botocore import UNSIGNED
@@ -37,7 +37,7 @@ class S3Manager:
             max_concurrency=MAX_CONCURRENCY,
             use_threads=True,
             max_bandwidth=None,
-            multipart_threshold=10 * GB,
+            multipart_threshold=10 * GB, # TODO: verify
         )
 
         self.s3_session = boto3.Session(

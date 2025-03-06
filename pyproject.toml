@@ -46,11 +46,7 @@ dev = [
     "pyinstaller",
     "pytest==8.3.5",
     "ruff",
-    "tqdm",
     "twine",
-]
-test = [
-    "pytest-cov",
 ]
 
 [tool.bandit]

@@ -2,7 +2,6 @@ import time
 
 import pandas as pd
 import pytest
-from dotenv import find_dotenv, load_dotenv
 from moto import mock_aws
 
 from s3_index.aws import S3Manager
@@ -12,18 +11,11 @@ from s3_index.index import IndexManager
 #######################################################
 def setup_module():
     print("setup")
-    env_file = find_dotenv(".env-dev")
-    # env_file = find_dotenv(".env-prod")
-    load_dotenv(dotenv_path=env_file, override=True)
 
 
 def teardown_module():
     print("teardown")
 
-
-@pytest.fixture
-def index_test_path(test_path):
-    return test_path["INDEX_TEST_PATH"]
 
 
 #######################################################
