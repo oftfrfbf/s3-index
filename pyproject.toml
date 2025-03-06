@@ -7,8 +7,8 @@ authors = [
 maintainers = [
   { name="Rudy Klucik", email="rudy.klucik@noaa.gov" },
 ]
-description = "Indexing s3 objects and generating hash tree"
-keywords = ["ocean", "sonar", "water column"]
+description = "Indexing s3 objects and generating a hash tree"
+keywords = ["oceanography"]
 readme = "README.md"
 requires-python = ">=3.12"
 classifiers = [
