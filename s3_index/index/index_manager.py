@@ -1,7 +1,9 @@
+import json
 import os
 from hashlib import sha256
 
 import networkx as nx
+from networkx.readwrite import json_graph
 import numpy as np
 
 from s3_index.aws import S3Manager
@@ -49,7 +51,7 @@ class IndexManager:
             for contents in page["Contents"]:
                 obj_key = contents["Key"]
                 # https://datatracker.ietf.org/doc/html/rfc7232#section-2.3
-                obj_etag = contents["ETag"].split('"')[1]  # strip away weakness
+                obj_etag = contents["ETag"].split('"')[1]  # strip away weakness param
                 obj_size = contents["Size"]
                 basename = os.path.basename(obj_key)
                 G.add_node(
@@ -63,7 +65,7 @@ class IndexManager:
                 for previous, current in zip(split_path, split_path[1:]):
                     if not G.has_edge(previous, current):
                         G.add_edge(previous, current)
-        # print(G)
+
         etag_set = frozenset(
             [k for j, k in list(G.nodes.data("ETag")) if k is not None]
         )
@@ -73,4 +75,33 @@ class IndexManager:
         print()  # 22.24 Terabytes in Henry_B._Bigelow cruises
         print(f"Total: {convert_size(total_size)}")
         print(new_hash)
+        print('bfs') # list(nx.bfs_predecessors(G, 'data'))[::-1]
+        # print(nx.bfs_predecessors(G, 0))
+
+        # write to json
+        # data = json_graph.tree_data(G, root='data')
+        # data = json_graph.tree_graph(G)
+        # with open('data.json', 'w') as f:
+        #     json.dump(data, f)
+        # https://github.com/vasturiano/react-force-graph/blob/master/example/datasets/forcegraph-dependencies.json
+        # {
+        #     "nodes": [
+        #         {"id": "Myriel", "group": 1},
+        #         {"id": "Napoleon", "group": 1},
+        #     ],
+        #     "links": [
+        #         {"source": "Napoleon", "target": "Myriel", "value": 1},
+        #         {"source": "Mlle.Baptistine", "target": "Myriel", "value": 8},
+        #     ]
+        # }
+        # nodes = [{'id': i[0], 'data': i[1]} for i in G.nodes(data=True)]
+        # nodes = [i[1] for i in G.nodes(data=True)]
+        nodes = [{'id': i[0]} for i in G.nodes(data=True)]
+        links = [{"source": i[0], "target": i[1]} for i in list(G.edges)]
+        output_data = {"nodes": nodes, "links": links}
+        with open('data.json', 'w') as f:
+            json.dump(output_data, f)
+
         return new_hash
+
+
