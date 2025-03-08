@@ -105,3 +105,25 @@ class IndexManager:
         return new_hash
 
 
+
+
+    def get_total_size(
+            self,
+            prefixes
+    ):
+        all_objects = []
+        # prefix = prefixes[0]
+        for prefix in prefixes:
+            print(prefix)
+            page_iterator = self.s3_manager.paginator.paginate(
+                Bucket=self.input_bucket_name,
+                Prefix=prefix,
+            )
+            for page in page_iterator:
+                for contents in page["Contents"]:
+                    all_objects.append({'Key': contents["Key"], 'Size': contents['Size']})
+
+        total_sizes = [j['Size'] for j in all_objects]
+        print(f"Total objects: {len(total_sizes)}")
+        total_size = np.sum(total_sizes)
+        print(f"Total size: {convert_size(total_size)}")
