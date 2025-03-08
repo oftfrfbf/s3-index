@@ -36,6 +36,7 @@ def test_build_merkle_tree():
     assert len(foo) > 0
 
 def test_get_total_size():
+	# files from here: https://docs.google.com/spreadsheets/d/1_mpVNaZI9hD3kG0P4cZIkG-TI6bCh9FTORPy3KfPq-o/edit?gid=0#gid=0
     prefixes = [
 		f"data/raw/Henry_B._Bigelow/HB2405/EK80/",
 		f"data/raw/Henry_B._Bigelow/HB2404/EK80/",
@@ -105,7 +106,7 @@ def test_get_total_size():
 		f"data/raw/Henry_B._Bigelow/HB1102/EK60/",
 		f"data/raw/Delaware_Ii/DE1010/EK60/",
 		f"data/raw/Henry_B._Bigelow/HB1006/EK60/",
-		# f"data/raw/Delaware_Ii/DE0107/EK60/", # EK500 not EK60
+		# f"data/raw/Delaware_Ii/DE0107/EK60/", # EK500 not EK60?
 		f"data/raw/Delaware_Ii/DE0107/EK500/",
 		f"data/raw/Henry_B._Bigelow/HB1002/EK60/",
 		f"data/raw/Henry_B._Bigelow/HB0905/EK60/",
@@ -116,7 +117,7 @@ def test_get_total_size():
 		f"data/raw/Henry_B._Bigelow/HB0901/EK60/",
 		f"data/raw/Henry_B._Bigelow/HB0807/EK60/",
 		f"data/raw/Albatross_Iv/AL0803/EK60/",
-		#f"data/raw/Delaware_Ii/DE0809/EK60/", # EK500 not EK60
+		#f"data/raw/Delaware_Ii/DE0809/EK60/", # EK500 not EK60?
 		f"data/raw/Delaware_Ii/DE0809/EK500/",
 		f"data/raw/Henry_B._Bigelow/HB0806/EK60/",
 		f"data/raw/Henry_B._Bigelow/HB0805/EK60/",
@@ -184,10 +185,11 @@ def test_get_total_size():
 		f"data/raw/Delaware_Ii/DE9809/EK500/",
 		f"data/raw/Albatross_Iv/AL9804/EK500/"
     ]
-    # for i in prefixes:
-    #     print(i)
+    # prefixes = [
+	# 	f"data/raw/Henry_B._Bigelow/HB1906/EK60/",
+	# ]
     index_manager = IndexManager("noaa-wcsd-pds")
-    foo = index_manager.get_total_size(prefixes=prefixes)
+    index_manager.get_total_size(prefixes=prefixes)
     # assert len(foo) > 0
 
 #######################################################
