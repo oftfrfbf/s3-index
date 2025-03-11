@@ -170,7 +170,7 @@ __pycache__
 *.env-prod*
 #*.zarr
 *.csv
-
+*.tar.gz
 #*.raw
 #*.bot
 #*.idx
