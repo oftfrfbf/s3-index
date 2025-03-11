@@ -132,7 +132,7 @@ class IndexManager:
             for contents in page["Contents"]:
                 # obj_etag = contents["ETag"].split('"')[1]  # strip away weakness param
                 all_objects.append({'Key': contents["Key"], 'Size': contents['Size'], "ETag": contents["ETag"].split('"')[1]})
-            break
+            # break
 
         total_sizes = [j['Size'] for j in all_objects]
         print(f"Total objects: {len(total_sizes)}")
@@ -142,11 +142,27 @@ class IndexManager:
         data = pd.DataFrame.from_dict(all_objects)
         data.to_csv('noaa-wcsd-pds-index.csv', index=False)
 
-        # with open('noaa-wcsd-pds-index.csv', 'w') as csv_file:
-        #     writer = csv.writer(csv_file)
-        #     writer.writerow(all_objects[0].keys())
-        #     writer.writerows(all_objects)
 
+"""
+TODO:
+    noaa-wcsd-pds index is:
+        sha256sum noaa-wcsd-pds-index.csv 
+        315dd51ad25f552b9c30f3ce0cc0e012bb224ebbbb19c8f8d54791fbfd743ff2  noaa-wcsd-pds-index.csv
+    index google 
+    gsutil ls -l gs://noaa-passive-bioacoustic/
+
+
+Testing started at 10:35 AM ...
+Launching pytest with arguments test_index_manager.py::test_index_s3_bucket --no-header --no-summary -q in /Users/rudy/Documents/github/s3-index/tests/index
+============================= test session starts ==============================
+collecting ... collected 1 item
+test_index_manager.py::test_index_s3_bucket setup
+PASSED                       [100%]Total objects: 4292490
+Total size: 293.46 TB
+teardown
+======================== 1 passed in 810.39s (0:13:30) =========================
+Process finished with exit code 0
+"""
 
 """
 setup

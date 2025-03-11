@@ -194,10 +194,6 @@ def test_get_total_size_henry_bigelow():
 	index_manager.get_total_size(prefixes=prefixes)
 
 def test_index_s3_bucket():
-	# files from here: https://docs.google.com/spreadsheets/d/1_mpVNaZI9hD3kG0P4cZIkG-TI6bCh9FTORPy3KfPq-o/edit?gid=0#gid=0
-	prefixes = [
-		f"data/raw/Henry_B._Bigelow/"
-	]
 	index_manager = IndexManager("noaa-wcsd-pds")
 	index_manager.index_s3_bucket()
 

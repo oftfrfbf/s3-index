@@ -1,6 +1,6 @@
 [project]
 name = "s3-index"
-version = "25.3.0"
+version = "25.3.1"
 authors = [
   { name="Rudy Klucik", email="rudy.klucik@noaa.gov" },
 ]
