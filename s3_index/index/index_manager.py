@@ -1,8 +1,9 @@
 import json
 import os
 from hashlib import sha256
-
+import csv
 import networkx as nx
+import pandas as pd
 from networkx.readwrite import json_graph
 import numpy as np
 
@@ -123,6 +124,29 @@ class IndexManager:
         print(f"Total objects: {len(total_sizes)}")
         total_size = np.sum(total_sizes) # Total size: 12.9 TB for all the data
         print(f"Total size: {convert_size(total_size)}")
+
+    def index_s3_bucket(self):
+        all_objects = []
+        page_iterator = self.s3_manager.paginator.paginate(Bucket=self.input_bucket_name, Prefix=f"data/raw/")
+        for page in page_iterator:
+            for contents in page["Contents"]:
+                # obj_etag = contents["ETag"].split('"')[1]  # strip away weakness param
+                all_objects.append({'Key': contents["Key"], 'Size': contents['Size'], "ETag": contents["ETag"].split('"')[1]})
+            break
+
+        total_sizes = [j['Size'] for j in all_objects]
+        print(f"Total objects: {len(total_sizes)}")
+        total_size = np.sum(total_sizes) # Total size: 12.9 TB for all the data
+        print(f"Total size: {convert_size(total_size)}")
+
+        data = pd.DataFrame.from_dict(all_objects)
+        data.to_csv('noaa-wcsd-pds-index.csv', index=False)
+
+        # with open('noaa-wcsd-pds-index.csv', 'w') as csv_file:
+        #     writer = csv.writer(csv_file)
+        #     writer.writerow(all_objects[0].keys())
+        #     writer.writerows(all_objects)
+
 
 """
 setup

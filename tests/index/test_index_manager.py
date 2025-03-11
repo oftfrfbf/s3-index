@@ -3,34 +3,34 @@ from s3_index.index import IndexManager
 
 #######################################################
 def setup_module():
-    print("setup")
+	print("setup")
 
 
 #######################################################
 def teardown_module():
-    print("teardown")
+	print("teardown")
 
 
 #######################################################
 #######################################################
 # @pytest.mark.skip(reason="requires prod credentials")
 def test_build_merkle_tree():
-    """
-    The goal of this test is to create a merkle tree of a s3 directory.
-    It will iterate over each object, record the keys, the checksum, & the
-    size and organize the information into a networkx graph
-    """
-    input_bucket_name = "noaa-wcsd-pds"
+	"""
+	The goal of this test is to create a merkle tree of a s3 directory.
+	It will iterate over each object, record the keys, the checksum, & the
+	size and organize the information into a networkx graph
+	"""
+	input_bucket_name = "noaa-wcsd-pds"
 
-    index_manager = IndexManager(input_bucket_name)
+	index_manager = IndexManager(input_bucket_name)
 
-    foo = index_manager.build_merkle_tree()
+	foo = index_manager.build_merkle_tree()
 
-    assert len(foo) > 0
+	assert len(foo) > 0
 
 def test_get_total_size():
-	# files from here: https://docs.google.com/spreadsheets/d/1_mpVNaZI9hD3kG0P4cZIkG-TI6bCh9FTORPy3KfPq-o/edit?gid=0#gid=0
-    prefixes = [
+	### files from here: https://docs.google.com/spreadsheets/d/1_mpVNaZI9hD3kG0P4cZIkG-TI6bCh9FTORPy3KfPq-o/edit?gid=0#gid=0
+	prefixes = [
 		f"data/raw/Henry_B._Bigelow/HB2405/EK80/",
 		f"data/raw/Henry_B._Bigelow/HB2404/EK80/",
 		f"data/raw/Henry_B._Bigelow/HB2403/EK80/",
@@ -177,21 +177,30 @@ def test_get_total_size():
 		f"data/raw/Delaware_Ii/DE9810/EK500/",
 		f"data/raw/Delaware_Ii/DE9809/EK500/",
 		f"data/raw/Albatross_Iv/AL9804/EK500/"
-    ]
-    # prefixes = [
+	]
+	# prefixes = [
 	# 	f"data/raw/Henry_B._Bigelow/HB1906/EK60/",
 	# ]
-    index_manager = IndexManager("noaa-wcsd-pds")
-    index_manager.get_total_size(prefixes=prefixes)
-    # assert len(foo) > 0
+	index_manager = IndexManager("noaa-wcsd-pds")
+	index_manager.get_total_size(prefixes=prefixes)
+	# assert len(foo) > 0
 
-def test_get_total_size2():
+def test_get_total_size_henry_bigelow():
 	# files from here: https://docs.google.com/spreadsheets/d/1_mpVNaZI9hD3kG0P4cZIkG-TI6bCh9FTORPy3KfPq-o/edit?gid=0#gid=0
 	prefixes = [
 		f"data/raw/Henry_B._Bigelow/"
 	]
 	index_manager = IndexManager("noaa-wcsd-pds")
 	index_manager.get_total_size(prefixes=prefixes)
+
+def test_index_s3_bucket():
+	# files from here: https://docs.google.com/spreadsheets/d/1_mpVNaZI9hD3kG0P4cZIkG-TI6bCh9FTORPy3KfPq-o/edit?gid=0#gid=0
+	prefixes = [
+		f"data/raw/Henry_B._Bigelow/"
+	]
+	index_manager = IndexManager("noaa-wcsd-pds")
+	index_manager.index_s3_bucket()
+
 
 #######################################################
 '''    
