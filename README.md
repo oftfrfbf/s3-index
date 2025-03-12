@@ -75,7 +75,7 @@ Total size: 695.33 GB
 data/raw/Henry_B._Bigelow/HB2001/EK60/
 Total objects: 1623
 Total size: 52.01 GB
-data/raw/Henry_B._Bigelow/HB1906/EK60/
+data/raw/Henry_B._Bigelow/HB1906/EK60/ # wip, aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB1906/EK60/ data/raw/Henry_B._Bigelow/HB1906/EK60/
 Total objects: 5130
 Total size: 167.16 GB
 data/raw/Gordon_Gunter/GU1905/EK60/
