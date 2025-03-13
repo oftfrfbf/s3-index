@@ -183,6 +183,10 @@ def test_get_total_size():
 	# ]
 	index_manager = IndexManager("noaa-wcsd-pds")
 	index_manager.get_total_size(prefixes=prefixes)
+	"""
+	Total objects: 616527
+	Total size: 12.9 TB # this is the size of all SonarAI needed files
+	"""
 	# assert len(foo) > 0
 
 def test_get_total_size_henry_bigelow():
@@ -195,7 +199,15 @@ def test_get_total_size_henry_bigelow():
 
 def test_index_s3_bucket():
 	index_manager = IndexManager("noaa-wcsd-pds")
-	index_manager.index_s3_bucket()
+	index_manager.index_s3_bucket(prefix="data/raw/")
+
+def test_index_crowbar():
+	index_manager = IndexManager("noaa-dcdb-bathymetry-pds")
+	index_manager.index_s3_bucket(prefix="")
+	"""
+	Total objects: 586168
+	Total size: 393.86 GB
+	"""
 
 
 #######################################################

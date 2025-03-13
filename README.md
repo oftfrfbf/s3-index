@@ -13,6 +13,8 @@ These are the paths in the s3://noaa-wcsd-pds bucket along with number of object
 ```commandline
 WIP 20250312
 data/raw/Henry_B._Bigelow/HB2405/EK80/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB2405/EK80/ data/raw/Henry_B._Bigelow/HB2405/EK80/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB2405/ data/raw/Henry_B._Bigelow/HB2405/
 Total objects: 176
 Total size: 32.99 GB
 data/raw/Henry_B._Bigelow/HB2404/EK80/
@@ -72,7 +74,7 @@ Total size: 55.07 GB
 data/raw/Henry_B._Bigelow/HB2101/EK60/
 Total objects: 14250
 Total size: 695.33 GB
-data/raw/Henry_B._Bigelow/HB2001/EK60/
+data/raw/Henry_B._Bigelow/HB2001/EK60/ # wip, aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB2001/EK60/ data/raw/Henry_B._Bigelow/HB2001/EK60/
 Total objects: 1623
 Total size: 52.01 GB
 data/raw/Henry_B._Bigelow/HB1906/EK60/ # wip, aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB1906/EK60/ data/raw/Henry_B._Bigelow/HB1906/EK60/
@@ -276,10 +278,10 @@ Total size: 7.97 GB
 data/raw/Henry_B._Bigelow/HB0706/EK60/
 Total objects: 159
 Total size: 9.6 GB
-data/raw/Henry_B._Bigelow/HB0707/EK60/
+data/raw/Henry_B._Bigelow/HB0707/EK60/ # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0707/EK60/ data/raw/Henry_B._Bigelow/HB0707/EK60/
 Total objects: 36
 Total size: 1.91 GB
-data/raw/Delaware_Ii/DE0615/EK500/
+data/raw/Delaware_Ii/DE0615/EK500/ #
 Total objects: 2217
 Total size: 4.22 GB
 data/raw/Albatross_Iv/AL0509/EK60/
