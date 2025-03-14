@@ -199,7 +199,14 @@ def test_get_total_size_henry_bigelow():
 
 def test_index_s3_bucket():
 	index_manager = IndexManager("noaa-wcsd-pds")
-	index_manager.index_s3_bucket(prefix="data/raw/")
+	index_manager.index_s3_bucket(prefix="data/raw/", file_name="noaa-wcsd-pds-index.csv")
+
+def test_index_s3_bucket_small_sha():
+	"""
+	proof of concept to test getting sha and creating tar.gz of file
+	"""
+	index_manager = IndexManager("noaa-wcsd-pds")
+	index_manager.index_s3_bucket(prefix="data/raw/Henry_B._Bigelow/HB0706/metadata/", file_name="noaa-wcsd-pds-index-test.csv")
 
 def test_index_crowbar():
 	index_manager = IndexManager("noaa-dcdb-bathymetry-pds")

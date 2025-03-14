@@ -252,30 +252,39 @@ data/raw/Delaware_Ii/DE0809/EK500/
 Total objects: 2411
 Total size: 4.6 GB
 data/raw/Henry_B._Bigelow/HB0806/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0806/EK60/ data/raw/Henry_B._Bigelow/HB0806/EK60/
 Total objects: 369
 Total size: 12.8 GB
 data/raw/Henry_B._Bigelow/HB0805/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0805/EK60/ data/raw/Henry_B._Bigelow/HB0805/EK60/
 Total objects: 1731
 Total size: 11.1 GB
 data/raw/Henry_B._Bigelow/HB0803/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0803/EK60/ data/raw/Henry_B._Bigelow/HB0803/EK60/
 Total objects: 5466
 Total size: 35.6 GB
 data/raw/Albatross_Iv/AL0801/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0801/EK60/ data/raw/Albatross_Iv/AL0801/EK60/
 Total objects: 2391
 Total size: 70.39 GB
 data/raw/Henry_B._Bigelow/HB0802/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0802/EK60/ data/raw/Henry_B._Bigelow/HB0802/EK60/
 Total objects: 17388
 Total size: 113.32 GB
 data/raw/Henry_B._Bigelow/HB0711/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0711/EK60/ data/raw/Henry_B._Bigelow/HB0711/EK60/
 Total objects: 648
 Total size: 25.56 GB
 data/raw/Delaware_Ii/DE0710/EK500/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0710/EK500/ data/raw/Delaware_Ii/DE0710/EK500/
 Total objects: 1494
 Total size: 3.03 GB
 data/raw/Henry_B._Bigelow/HB0710/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0710/EK60/ data/raw/Henry_B._Bigelow/HB0710/EK60/
 Total objects: 129
 Total size: 7.97 GB
 data/raw/Henry_B._Bigelow/HB0706/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0706/EK60/ data/raw/Henry_B._Bigelow/HB0706/EK60/
 Total objects: 159
 Total size: 9.6 GB
 data/raw/Henry_B._Bigelow/HB0707/EK60/ # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0707/EK60/ data/raw/Henry_B._Bigelow/HB0707/EK60/
@@ -448,4 +457,12 @@ For a grand total of:
 ```commandline
 Total objects: 616527
 Total size: 12.9 TB
+```
+
+To tar a file
+> tar -czvf noaa-dcdb-bathymetry-pds-index.tar.gz noaa-dcdb-bathymetry-pds-index.csv
+And then
+```commandline
+$ sha256sum noaa-dcdb-bathymetry-pds-index.tar.gz 
+3f1cbc3831ca133061a53c9a4bc949987a8e6191d2fa78a943011c0bfcd595d9  noaa-dcdb-bathymetry-pds-index.tar.gz
 ```

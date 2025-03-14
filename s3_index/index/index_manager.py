@@ -1,9 +1,14 @@
+import glob
 import json
 import os
+import tarfile
 from hashlib import sha256
+import hashlib
 import networkx as nx
 import pandas as pd
 import numpy as np
+from awscrt import checksums
+import base64
 
 from s3_index.aws import S3Manager
 
@@ -34,6 +39,9 @@ class IndexManager:
         self.s3_manager = S3Manager()
 
     #################################################################
+    def get_bucket_name(self):
+        return self.input_bucket_name
+
     def build_merkle_tree(self):
         G = nx.DiGraph()
         # https://noaa-wcsd-pds.s3.amazonaws.com/index.html#data/raw/Henry_B._Bigelow/HB0707/
@@ -123,9 +131,32 @@ class IndexManager:
         total_size = np.sum(total_sizes) # Total size: 12.9 TB for all the data
         print(f"Total size: {convert_size(total_size)}")
 
+    def compress_to_tar_gz(
+            self,
+            source_dir,
+            archive_name,
+    ):
+        tar = tarfile.open(archive_name, "w:gz")
+        for file_name in glob.glob(os.path.join(source_dir, "*")):
+            print("  Adding %s..." % file_name)
+            tar.add(file_name, os.path.basename(file_name))
+        tar.close()
+
+    def file_sha256_sum(self, file_name, crc64nvme=False):
+        if crc64nvme:
+            with open(file_name, 'rb', buffering=0) as f:
+                checksum = checksums.crc64nvme(f)
+                checksum_bytes = checksum.to_bytes(8, byteorder='big')  # CRC64 is 8 bytes
+                checksum_base64 = base64.b64encode(checksum_bytes)
+                return checksum_base64
+        else:
+            with open(file_name, 'rb', buffering=0) as f:
+                return hashlib.file_digest(f, 'sha256').hexdigest()
+
     def index_s3_bucket(
             self,
-            prefix
+            prefix,
+            file_name,
     ):
         all_objects = []
         page_iterator = self.s3_manager.paginator.paginate(Bucket=self.input_bucket_name, Prefix=prefix)
@@ -141,7 +172,21 @@ class IndexManager:
         print(f"Total size: {convert_size(total_size)}")
 
         data = pd.DataFrame.from_dict(all_objects)
-        data.to_csv(f'{self.input_bucket_name}-index.csv', index=False)
+        data.to_csv(file_name, index=False)
+        # TODO: convert csv into tar.gz
+        # tar c noaa-dcdb-bathymetry-pds-index.csv | gzip --best > noaa-dcdb-bathymetry-pds-index2.tar.gz
+        # self.compress_to_tar_gz(source_dir=, archive_name=)
+        archive_name = "noaa-wcsd-pds-index-test.tar.gz"
+        tar = tarfile.open(archive_name, "w:gz")
+        tar.add(file_name, os.path.basename(file_name))
+        tar.close()
+        # TODO: get sha sum of tar.gz
+        archive_hash = self.file_sha256_sum(file_name=os.path.basename(archive_name), crc64nvme=False)
+        print(archive_hash)
+        # TODO: write has to file
+        text_file = open(f"{archive_name}_sha256sum", "w")
+        text_file.write(f"sha256:{archive_hash} {file_name}")
+        text_file.close()
 
 
 """
