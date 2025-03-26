@@ -197,6 +197,18 @@ def test_get_total_size_henry_bigelow():
 	index_manager = IndexManager("noaa-wcsd-pds")
 	index_manager.get_total_size(prefixes=prefixes)
 
+# Level 2 data
+def test_get_total_size_henry_bigelow_hb0707_l2():
+	# files from here: https://docs.google.com/spreadsheets/d/1_mpVNaZI9hD3kG0P4cZIkG-TI6bCh9FTORPy3KfPq-o/edit?gid=0#gid=0
+	prefixes = [f"level_2/Henry_B._Bigelow/HB0707/EK60/HB0707.zarr/"]
+	index_manager = IndexManager("noaa-wcsd-zarr-pds")
+	index_manager.get_total_size(prefixes=prefixes)
+
+def test_get_total_size_henry_bigelow_hb0707_l0():
+	prefixes = [f"data/raw/Henry_B._Bigelow/HB0707/EK60/"]
+	index_manager = IndexManager("noaa-wcsd-pds")
+	index_manager.get_total_size(prefixes=prefixes)
+
 def test_index_s3_bucket():
 	index_manager = IndexManager("noaa-wcsd-pds")
 	index_manager.index_s3_bucket(prefix="data/raw/", file_name="noaa-wcsd-pds-index.csv")
@@ -210,7 +222,7 @@ def test_index_s3_bucket_small_sha():
 
 def test_index_crowbar():
 	index_manager = IndexManager("noaa-dcdb-bathymetry-pds")
-	index_manager.index_s3_bucket(prefix="")
+	index_manager.index_s3_bucket(prefix="", file_name="noaa-dcdb-bathymetry-pds.csv")
 	"""
 	Total objects: 586168
 	Total size: 393.86 GB
