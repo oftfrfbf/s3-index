@@ -53,8 +53,8 @@ dev = [
 [tool.bandit]
 exclude_dirs = ["tests"]
 
-[tool.pre-commit-hooks.bandit]
-exclude = ["*/tests/*"]
+#[tool.pre-commit-hooks.bandit]
+#exclude = ["*/tests/*"]
 
 [tool.isort]
 known_first_party = "s3_index"
