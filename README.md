@@ -423,7 +423,7 @@ data/raw/Albatross_Iv/AL0002/EK500/
 Total objects: 10038
 Total size: 4.4 GB
 data/raw/Albatross_Iv/AL0001/EK500/
-# aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0001/EK500/ data/raw/Albatross_Iv/AL0001/EK500/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0001/EK500/ data/raw/Albatross_Iv/AL0001/EK500/
 Total objects: 4024
 Total size: 1.81 GB
 data/raw/Delaware_Ii/DE0002/EK500/
@@ -485,6 +485,6 @@ To tar a file
 > tar -czvf noaa-dcdb-bathymetry-pds-index.tar.gz noaa-dcdb-bathymetry-pds-index.csv
 And then
 ```commandline
-$ sha256sum noaa-dcdb-bathymetry-pds-index.tar.gz 
+$ sha256sum noaa-dcdb-bathymetry-pds-index.tar.gz
 3f1cbc3831ca133061a53c9a4bc949987a8e6191d2fa78a943011c0bfcd595d9  noaa-dcdb-bathymetry-pds-index.tar.gz
 ```
