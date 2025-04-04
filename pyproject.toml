@@ -45,7 +45,7 @@ dev = [
     "pooch==1.8.2",
     "pre-commit",
     "pyinstaller",
-    "pytest==8.3.5",
+    "pytest",
     "ruff",
     "twine",
 ]
