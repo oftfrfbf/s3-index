@@ -27,6 +27,7 @@ dependencies = [
     "numcodecs==0.13.1",
     "numpy==1.26.4",
     "pandas==2.2.3",
+    "pytest>=8.3.5",
     "requests==2.32.3",
     "s3fs==2024.2.0",
     "safety==3.2.14",
