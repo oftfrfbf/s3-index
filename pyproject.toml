@@ -2,10 +2,10 @@
 name = "s3-index"
 version = "25.3.1"
 authors = [
-  { name="Rudy Klucik", email="rudy.klucik@noaa.gov" },
+  { name="Rudy Klucik", email="klucik@colorado.edu" },
 ]
 maintainers = [
-  { name="Rudy Klucik", email="rudy.klucik@noaa.gov" },
+  { name="Rudy Klucik", email="klucik@colorado.edu" },
 ]
 description = "Indexing s3 objects and generating a hash tree"
 keywords = ["oceanography"]
