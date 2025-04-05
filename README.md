@@ -126,6 +126,7 @@ data/raw/Henry_B._Bigelow/HB1604/EK60/
 Total objects: 15957
 Total size: 259.71 GB
 data/raw/Pisces/PC1609/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Pisces/PC1609/EK60/ data/raw/Pisces/PC1609/EK60/
 Total objects: 486
 Total size: 7.95 GB
 data/raw/Henry_B._Bigelow/HB1603/EK60/
