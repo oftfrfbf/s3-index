@@ -13,8 +13,8 @@ These are the paths in the s3://noaa-wcsd-pds bucket along with number of object
 ```commandline
 WIP 20250312
 data/raw/Henry_B._Bigelow/HB2405/EK80/
-    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB2405/EK80/ data/raw/Henry_B._Bigelow/HB2405/EK80/
-    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB2405/ data/raw/Henry_B._Bigelow/HB2405/
+# aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB2405/EK80/ data/raw/Henry_B._Bigelow/HB2405/EK80/
+# aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB2405/ data/raw/Henry_B._Bigelow/HB2405/
 Total objects: 176
 Total size: 32.99 GB
 data/raw/Henry_B._Bigelow/HB2404/EK80/
@@ -330,6 +330,7 @@ data/raw/Albatross_Iv/AL0409/EK60/
 Total objects: 2198
 Total size: 32.65 GB
 data/raw/Delaware_Ii/DE0413/EK500/
+# aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0413/EK500/ data/raw/Delaware_Ii/DE0413/EK500/
 Total objects: 2160
 Total size: 21.17 GB
 data/raw/Delaware_Ii/DE0410/EK500/
@@ -345,6 +346,7 @@ data/raw/Albatross_Iv/AL0404/EK60/
 Total objects: 50
 Total size: 4.58 GB
 data/raw/Albatross_Iv/AL0403/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0403/EK60/ data/raw/Albatross_Iv/AL0403/EK60/
 Total objects: 145
 Total size: 13.06 GB
 data/raw/Albatross_Iv/AL0401/EK60/
