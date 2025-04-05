@@ -219,7 +219,7 @@ data/raw/Henry_B._Bigelow/HB1006/EK60/
 Total objects: 5805
 Total size: 93.65 GB
 data/raw/Delaware_Ii/DE0107/EK500/
-        # aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0107/EK500/ data/raw/Delaware_Ii/DE0107/EK500/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0107/EK500/ data/raw/Delaware_Ii/DE0107/EK500/
 Total objects: 894
 Total size: 1.67 GB
 data/raw/Henry_B._Bigelow/HB1002/EK60/
@@ -345,9 +345,11 @@ data/raw/Albatross_Iv/AL0305/EK60/
 Total objects: 7010
 Total size: 27.47 GB
 data/raw/Albatross_Iv/AL0304/EK60/
+#aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0304/EK60/ data/raw/Albatross_Iv/AL0304/EK60/
 Total objects: 620
 Total size: 2.42 GB
 data/raw/Delaware_Ii/DE0306/EK500/
+#aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0306/EK500/ data/raw/Delaware_Ii/DE0306/EK500/
 Total objects: 182
 Total size: 722.08 MB
 data/raw/Delaware_Ii/DE0303/EK500/
@@ -367,6 +369,7 @@ data/raw/Albatross_Iv/AL0210/EK500/
 Total objects: 358
 Total size: 1.32 GB
 data/raw/Delaware_Ii/DE0208/EK500/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0208/EK500/ data/raw/Delaware_Ii/DE0208/EK500/
 Total objects: 1128
 Total size: 4.38 GB
 data/raw/Delaware_Ii/DE0206/EK500/
@@ -493,37 +496,3 @@ And then
 $ sha256sum noaa-dcdb-bathymetry-pds-index.tar.gz
 3f1cbc3831ca133061a53c9a4bc949987a8e6191d2fa78a943011c0bfcd595d9  noaa-dcdb-bathymetry-pds-index.tar.gz
 ```
-
-
-
-
-# done
-aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0304/EK60/ data/raw/Albatross_Iv/AL0304/EK60/
-aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0306/EK500/ data/raw/Delaware_Ii/DE0306/EK500/
-aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0303/EK500/ data/raw/Delaware_Ii/DE0303/EK500/
-aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0302/EK500/ data/raw/Delaware_Ii/DE0302/EK500/
-aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0301/EK500/ data/raw/Delaware_Ii/DE0301/EK500/
-aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0210/EK500/ data/raw/Albatross_Iv/AL0210/EK500/
-aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0208/EK500/ data/raw/Delaware_Ii/DE0208/EK500/
-
-# todo
-aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0206/EK500/ data/raw/Delaware_Ii/DE0206/EK500/
-aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0207/EK500/ data/raw/Albatross_Iv/AL0207/EK500/
-aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0204/EK500/ data/raw/Albatross_Iv/AL0204/EK500/
-aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0201/EK500/ data/raw/Delaware_Ii/DE0201/EK500/
-aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0203/EK500/ data/raw/Albatross_Iv/AL0203/EK500/
-aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0110/EK500/ data/raw/Albatross_Iv/AL0110/EK500/
-aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0109/EK500/ data/raw/Delaware_Ii/DE0109/EK500/
-aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0108/EK500/ data/raw/Delaware_Ii/DE0108/EK500/
-
-# todo
-aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0105/EK500/ data/raw/Albatross_Iv/AL0105/EK500/
-aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0104/EK500/ data/raw/Albatross_Iv/AL0104/EK500/
-aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0103/EK500/ data/raw/Albatross_Iv/AL0103/EK500/
-aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0102/EK500/ data/raw/Albatross_Iv/AL0102/EK500/
-aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0101/EK500/ data/raw/Delaware_Ii/DE0101/EK500/
-aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0007/EK500/ data/raw/Albatross_Iv/AL0007/EK500/
-aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0006/EK500/ data/raw/Albatross_Iv/AL0006/EK500/
-aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0008/EK500/ data/raw/Delaware_Ii/DE0008/EK500/
-aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0007/EK500/ data/raw/Delaware_Ii/DE0007/EK500/
-aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0005/EK500/ data/raw/Delaware_Ii/DE0005/EK500/
