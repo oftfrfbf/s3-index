@@ -303,21 +303,26 @@ data/raw/Delaware_Ii/DE0615/EK500/ #
 Total objects: 2217
 Total size: 4.22 GB
 data/raw/Albatross_Iv/AL0509/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0509/EK60/ data/raw/Albatross_Iv/AL0509/EK60/
 Total objects: 382
 Total size: 3.68 GB
 data/raw/Albatross_Iv/AL0508/EK60/
 Total objects: 1493
 Total size: 14.51 GB
 data/raw/Delaware_Ii/DE0512/EK500/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0512/EK500/ data/raw/Delaware_Ii/DE0512/EK500/
 Total objects: 2359
 Total size: 4.52 GB
 data/raw/Delaware_Ii/DE0505/EK500/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0505/EK500/ data/raw/Delaware_Ii/DE0505/EK500/
 Total objects: 329
 Total size: 6.36 GB
 data/raw/Albatross_Iv/AL0504/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0504/EK60/ data/raw/Albatross_Iv/AL0504/EK60/
 Total objects: 271
 Total size: 2.64 GB
 data/raw/Albatross_Iv/AL0502/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0502/EK60/ data/raw/Albatross_Iv/AL0502/EK60/
 Total objects: 662
 Total size: 6.46 GB
 data/raw/Albatross_Iv/AL0409/EK60/
@@ -327,29 +332,34 @@ data/raw/Delaware_Ii/DE0413/EK500/
 Total objects: 2160
 Total size: 21.17 GB
 data/raw/Delaware_Ii/DE0410/EK500/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0410/EK500/ data/raw/Delaware_Ii/DE0410/EK500/
 Total objects: 268
 Total size: 1.05 GB
 data/raw/Delaware_Ii/DE0408/EK500/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0408/EK500/ data/raw/Delaware_Ii/DE0408/EK500/
 Total objects: 1837
 Total size: 7.21 GB
 data/raw/Albatross_Iv/AL0404/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0404/EK60/ data/raw/Albatross_Iv/AL0404/EK60/
 Total objects: 50
 Total size: 4.58 GB
 data/raw/Albatross_Iv/AL0403/EK60/
 Total objects: 145
 Total size: 13.06 GB
 data/raw/Albatross_Iv/AL0401/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0401/EK60/ data/raw/Albatross_Iv/AL0401/EK60/
 Total objects: 1114
 Total size: 4.37 GB
 data/raw/Albatross_Iv/AL0305/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0305/EK60/ data/raw/Albatross_Iv/AL0305/EK60/
 Total objects: 7010
 Total size: 27.47 GB
 data/raw/Albatross_Iv/AL0304/EK60/
-#aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0304/EK60/ data/raw/Albatross_Iv/AL0304/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0304/EK60/ data/raw/Albatross_Iv/AL0304/EK60/
 Total objects: 620
 Total size: 2.42 GB
 data/raw/Delaware_Ii/DE0306/EK500/
-#aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0306/EK500/ data/raw/Delaware_Ii/DE0306/EK500/
+    #aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0306/EK500/ data/raw/Delaware_Ii/DE0306/EK500/
 Total objects: 182
 Total size: 722.08 MB
 data/raw/Delaware_Ii/DE0303/EK500/
@@ -373,45 +383,59 @@ data/raw/Delaware_Ii/DE0208/EK500/
 Total objects: 1128
 Total size: 4.38 GB
 data/raw/Delaware_Ii/DE0206/EK500/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0206/EK500/ data/raw/Delaware_Ii/DE0206/EK500/
 Total objects: 112
 Total size: 405.55 MB
 data/raw/Albatross_Iv/AL0207/EK500/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0207/EK500/ data/raw/Albatross_Iv/AL0207/EK500/
 Total objects: 210
 Total size: 804.11 MB
 data/raw/Albatross_Iv/AL0204/EK500/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0204/EK500/ data/raw/Albatross_Iv/AL0204/EK500/
 Total objects: 706
 Total size: 2.64 GB
 data/raw/Delaware_Ii/DE0201/EK500/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0201/EK500/ data/raw/Delaware_Ii/DE0201/EK500/
 Total objects: 509
 Total size: 1.96 GB
 data/raw/Albatross_Iv/AL0203/EK500/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0203/EK500/ data/raw/Albatross_Iv/AL0203/EK500/
 Total objects: 409
 Total size: 1.54 GB
 data/raw/Albatross_Iv/AL0110/EK500/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0110/EK500/ data/raw/Albatross_Iv/AL0110/EK500/
 Total objects: 881
 Total size: 2.68 GB
 data/raw/Delaware_Ii/DE0109/EK500/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0109/EK500/ data/raw/Delaware_Ii/DE0109/EK500/
 Total objects: 1136
 Total size: 4.22 GB
 data/raw/Delaware_Ii/DE0108/EK500/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0108/EK500/ data/raw/Delaware_Ii/DE0108/EK500/
 Total objects: 1481
 Total size: 2.82 GB
 data/raw/Albatross_Iv/AL0105/EK500/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0105/EK500/ data/raw/Albatross_Iv/AL0105/EK500/
 Total objects: 4846
 Total size: 1.51 GB
 data/raw/Albatross_Iv/AL0104/EK500/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0104/EK500/ data/raw/Albatross_Iv/AL0104/EK500/
 Total objects: 687
 Total size: 339.61 MB
 data/raw/Albatross_Iv/AL0103/EK500/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0103/EK500/ data/raw/Albatross_Iv/AL0103/EK500/
 Total objects: 10664
 Total size: 4.55 GB
 data/raw/Albatross_Iv/AL0102/EK500/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0102/EK500/ data/raw/Albatross_Iv/AL0102/EK500/
 Total objects: 4800
 Total size: 2.26 GB
 data/raw/Delaware_Ii/DE0101/EK500/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0101/EK500/ data/raw/Delaware_Ii/DE0101/EK500/
 Total objects: 7594
 Total size: 1.85 GB
 data/raw/Albatross_Iv/AL0007/EK500/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0007/EK500/ data/raw/Albatross_Iv/AL0007/EK500/
 Total objects: 4992
 Total size: 1.64 GB
 data/raw/Albatross_Iv/AL0006/EK500/
