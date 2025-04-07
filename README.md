@@ -14,7 +14,6 @@ These are the paths in the s3://noaa-wcsd-pds bucket along with number of object
 WIP 20250312
 data/raw/Henry_B._Bigelow/HB2405/EK80/
 # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB2405/EK80/ data/raw/Henry_B._Bigelow/HB2405/EK80/
-# aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB2405/ data/raw/Henry_B._Bigelow/HB2405/
 Total objects: 176
 Total size: 32.99 GB
 data/raw/Henry_B._Bigelow/HB2404/EK80/
@@ -77,7 +76,9 @@ Total size: 695.33 GB
 data/raw/Henry_B._Bigelow/HB2001/EK60/ # wip, aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB2001/EK60/ data/raw/Henry_B._Bigelow/HB2001/EK60/
 Total objects: 1623
 Total size: 52.01 GB
-data/raw/Henry_B._Bigelow/HB1906/EK60/ # wip, aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB1906/EK60/ data/raw/Henry_B._Bigelow/HB1906/EK60/
+data/raw/Henry_B._Bigelow/HB1906/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB1906/EK60/ data/raw/Henry_B._Bigelow/HB1906/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB1906/metadata/ data/raw/Henry_B._Bigelow/HB1906/metadata/
 Total objects: 5130
 Total size: 167.16 GB
 data/raw/Gordon_Gunter/GU1905/EK60/
@@ -163,6 +164,7 @@ data/raw/Henry_B._Bigelow/HB1403/EK60/
 Total objects: 699
 Total size: 22.39 GB
 data/raw/Henry_B._Bigelow/HB1402/EK60/
+# aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB1402/EK60/ data/raw/Henry_B._Bigelow/HB1402/EK60/
 Total objects: 528
 Total size: 16.48 GB
 data/raw/Henry_B._Bigelow/HB1401/EK60/
@@ -181,7 +183,7 @@ data/raw/Henry_B._Bigelow/HB1304/EK60/
 Total objects: 15232
 Total size: 175.33 GB
 data/raw/Okeanos_Explorer/EX1305/EK60/
-# aws s3 sync s3://noaa-wcsd-pds/data/raw/Okeanos_Explorer/EX1305/EK60/ data/raw/Okeanos_Explorer/EX1305/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Okeanos_Explorer/EX1305/EK60/ data/raw/Okeanos_Explorer/EX1305/EK60/
 Total objects: 810
 Total size: 12.79 GB
 data/raw/Henry_B._Bigelow/HB1303/EK60/
@@ -220,6 +222,9 @@ Total size: 58.43 GB
 data/raw/Henry_B._Bigelow/HB1006/EK60/
 Total objects: 5805
 Total size: 93.65 GB
+#
+# left off here with metadata
+#
 data/raw/Delaware_Ii/DE0107/EK500/
     # aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0107/EK500/ data/raw/Delaware_Ii/DE0107/EK500/
 Total objects: 894
@@ -533,3 +538,178 @@ And then
 $ sha256sum noaa-dcdb-bathymetry-pds-index.tar.gz
 3f1cbc3831ca133061a53c9a4bc949987a8e6191d2fa78a943011c0bfcd595d9  noaa-dcdb-bathymetry-pds-index.tar.gz
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0107/EK500/ data/raw/Delaware_Ii/DE0107/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0905/EK60/ data/raw/Henry_B._Bigelow/HB0905/EK60/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0910/EK60/ data/raw/Delaware_Ii/DE0910/EK60/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0904/EK60 data/raw/Henry_B._Bigelow/HB0904/EK60
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0903/EK60/ data/raw/Henry_B._Bigelow/HB0903/EK60/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0902/EK60/ data/raw/Henry_B._Bigelow/HB0902/EK60/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0901/EK60/ data/raw/Henry_B._Bigelow/HB0901/EK60/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0807/EK60/ data/raw/Henry_B._Bigelow/HB0807/EK60/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0803/EK60/ data/raw/Albatross_Iv/AL0803/EK60/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0809/EK500/ data/raw/Delaware_Ii/DE0809/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0806/EK60/ data/raw/Henry_B._Bigelow/HB0806/EK60/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0805/EK60/ data/raw/Henry_B._Bigelow/HB0805/EK60/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0803/EK60/ data/raw/Henry_B._Bigelow/HB0803/EK60/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0801/EK60/ data/raw/Albatross_Iv/AL0801/EK60/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0802/EK60/ data/raw/Henry_B._Bigelow/HB0802/EK60/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0711/EK60/ data/raw/Henry_B._Bigelow/HB0711/EK60/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0710/EK500/ data/raw/Delaware_Ii/DE0710/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0710/EK60/ data/raw/Henry_B._Bigelow/HB0710/EK60/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0706/EK60/ data/raw/Henry_B._Bigelow/HB0706/EK60/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0707/EK60/ data/raw/Henry_B._Bigelow/HB0707/EK60/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0615/EK500/ data/raw/Delaware_Ii/DE0615/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0509/EK60/ data/raw/Albatross_Iv/AL0509/EK60/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0508/EK60/ data/raw/Albatross_Iv/AL0508/EK60/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0512/EK500/ data/raw/Delaware_Ii/DE0512/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0505/EK500/ data/raw/Delaware_Ii/DE0505/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0504/EK60/ data/raw/Albatross_Iv/AL0504/EK60/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0502/EK60/ data/raw/Albatross_Iv/AL0502/EK60/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0409/EK60/ data/raw/Albatross_Iv/AL0409/EK60/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0413/EK500/ data/raw/Delaware_Ii/DE0413/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0410/EK500/ data/raw/Delaware_Ii/DE0410/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0408/EK500/ data/raw/Delaware_Ii/DE0408/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0404/EK60/ data/raw/Albatross_Iv/AL0404/EK60/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0403/EK60/ data/raw/Albatross_Iv/AL0403/EK60/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0401/EK60/ data/raw/Albatross_Iv/AL0401/EK60/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0305/EK60/ data/raw/Albatross_Iv/AL0305/EK60/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0304/EK60/ data/raw/Albatross_Iv/AL0304/EK60/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0306/EK500/ data/raw/Delaware_Ii/DE0306/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0303/EK500/ data/raw/Delaware_Ii/DE0303/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0302/EK500/ data/raw/Delaware_Ii/DE0302/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0301/EK500/ data/raw/Delaware_Ii/DE0301/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0210/EK500/ data/raw/Albatross_Iv/AL0210/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0208/EK500/ data/raw/Delaware_Ii/DE0208/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0206/EK500/ data/raw/Delaware_Ii/DE0206/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0207/EK500/ data/raw/Albatross_Iv/AL0207/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0204/EK500/ data/raw/Albatross_Iv/AL0204/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0201/EK500/ data/raw/Delaware_Ii/DE0201/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0203/EK500/ data/raw/Albatross_Iv/AL0203/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0110/EK500/ data/raw/Albatross_Iv/AL0110/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0109/EK500/ data/raw/Delaware_Ii/DE0109/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0108/EK500/ data/raw/Delaware_Ii/DE0108/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0105/EK500/ data/raw/Albatross_Iv/AL0105/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0104/EK500/ data/raw/Albatross_Iv/AL0104/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0103/EK500/ data/raw/Albatross_Iv/AL0103/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0102/EK500/ data/raw/Albatross_Iv/AL0102/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0101/EK500/ data/raw/Delaware_Ii/DE0101/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0007/EK500/ data/raw/Albatross_Iv/AL0007/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0006/EK500/ data/raw/Albatross_Iv/AL0006/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0008/EK500/ data/raw/Delaware_Ii/DE0008/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0007/EK500/ data/raw/Delaware_Ii/DE0007/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0005/EK500/ data/raw/Delaware_Ii/DE0005/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0002/EK500/ data/raw/Albatross_Iv/AL0002/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0001/EK500/ data/raw/Albatross_Iv/AL0001/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0002/EK500/ data/raw/Delaware_Ii/DE0002/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL9911/EK500/ data/raw/Albatross_Iv/AL9911/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE9909/EK500/ data/raw/Delaware_Ii/DE9909/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE9908/EK500/ data/raw/Delaware_Ii/DE9908/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE9906/EK500/ data/raw/Delaware_Ii/DE9906/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL9903/EK500/ data/raw/Albatross_Iv/AL9903/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE9903/EK500/ data/raw/Delaware_Ii/DE9903/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL9902/EK500/ data/raw/Albatross_Iv/AL9902/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL9811/EK500/ data/raw/Albatross_Iv/AL9811/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE9810/EK500/ data/raw/Delaware_Ii/DE9810/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE9809/EK500/ data/raw/Delaware_Ii/DE9809/EK500/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL9804/EK500/ data/raw/Albatross_Iv/AL9804/EK500/
+
+# metadata
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0107/metadata/ data/raw/Delaware_Ii/DE0107/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0905/metadata/ data/raw/Henry_B._Bigelow/HB0905/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0910/metadata/ data/raw/Delaware_Ii/DE0910/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0904/metadata data/raw/Henry_B._Bigelow/HB0904/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0903/metadata/ data/raw/Henry_B._Bigelow/HB0903/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0902/metadata/ data/raw/Henry_B._Bigelow/HB0902/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0901/metadata/ data/raw/Henry_B._Bigelow/HB0901/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0807/metadata/ data/raw/Henry_B._Bigelow/HB0807/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0803/metadata/ data/raw/Albatross_Iv/AL0803/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0809/metadata/ data/raw/Delaware_Ii/DE0809/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0806/metadata/ data/raw/Henry_B._Bigelow/HB0806/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0805/metadata/ data/raw/Henry_B._Bigelow/HB0805/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0803/metadata/ data/raw/Henry_B._Bigelow/HB0803/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0801/metadata/ data/raw/Albatross_Iv/AL0801/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0802/metadata/ data/raw/Henry_B._Bigelow/HB0802/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0711/metadata/ data/raw/Henry_B._Bigelow/HB0711/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0710/metadata/ data/raw/Delaware_Ii/DE0710/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0710/metadata/ data/raw/Henry_B._Bigelow/HB0710/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0706/metadata/ data/raw/Henry_B._Bigelow/HB0706/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB0707/metadata/ data/raw/Henry_B._Bigelow/HB0707/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0615/metadata/ data/raw/Delaware_Ii/DE0615/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0509/metadata/ data/raw/Albatross_Iv/AL0509/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0508/metadata/ data/raw/Albatross_Iv/AL0508/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0512/metadata/ data/raw/Delaware_Ii/DE0512/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0505/metadata/ data/raw/Delaware_Ii/DE0505/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0504/metadata/ data/raw/Albatross_Iv/AL0504/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0502/metadata/ data/raw/Albatross_Iv/AL0502/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0409/metadata/ data/raw/Albatross_Iv/AL0409/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0413/metadata/ data/raw/Delaware_Ii/DE0413/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0410/metadata/ data/raw/Delaware_Ii/DE0410/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0408/metadata/ data/raw/Delaware_Ii/DE0408/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0404/metadata/ data/raw/Albatross_Iv/AL0404/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0403/metadata/ data/raw/Albatross_Iv/AL0403/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0401/metadata/ data/raw/Albatross_Iv/AL0401/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0305/metadata/ data/raw/Albatross_Iv/AL0305/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0304/metadata/ data/raw/Albatross_Iv/AL0304/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0306/metadata/ data/raw/Delaware_Ii/DE0306/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0303/metadata/ data/raw/Delaware_Ii/DE0303/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0302/metadata/ data/raw/Delaware_Ii/DE0302/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0301/metadata/ data/raw/Delaware_Ii/DE0301/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0210/metadata/ data/raw/Albatross_Iv/AL0210/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0208/metadata/ data/raw/Delaware_Ii/DE0208/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0206/metadata/ data/raw/Delaware_Ii/DE0206/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0207/metadata/ data/raw/Albatross_Iv/AL0207/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0204/metadata/ data/raw/Albatross_Iv/AL0204/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0201/metadata/ data/raw/Delaware_Ii/DE0201/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0203/metadata/ data/raw/Albatross_Iv/AL0203/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0110/metadata/ data/raw/Albatross_Iv/AL0110/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0109/metadata/ data/raw/Delaware_Ii/DE0109/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0108/metadata/ data/raw/Delaware_Ii/DE0108/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0105/metadata/ data/raw/Albatross_Iv/AL0105/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0104/metadata/ data/raw/Albatross_Iv/AL0104/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0103/metadata/ data/raw/Albatross_Iv/AL0103/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0102/metadata/ data/raw/Albatross_Iv/AL0102/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0101/metadata/ data/raw/Delaware_Ii/DE0101/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0007/metadata/ data/raw/Albatross_Iv/AL0007/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0006/metadata/ data/raw/Albatross_Iv/AL0006/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0008/metadata/ data/raw/Delaware_Ii/DE0008/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0007/metadata/ data/raw/Delaware_Ii/DE0007/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0005/metadata/ data/raw/Delaware_Ii/DE0005/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0002/metadata/ data/raw/Albatross_Iv/AL0002/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL0001/metadata/ data/raw/Albatross_Iv/AL0001/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE0002/metadata/ data/raw/Delaware_Ii/DE0002/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL9911/metadata/ data/raw/Albatross_Iv/AL9911/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE9909/metadata/ data/raw/Delaware_Ii/DE9909/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE9908/metadata/ data/raw/Delaware_Ii/DE9908/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE9906/metadata/ data/raw/Delaware_Ii/DE9906/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL9903/metadata/ data/raw/Albatross_Iv/AL9903/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE9903/metadata/ data/raw/Delaware_Ii/DE9903/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL9902/metadata/ data/raw/Albatross_Iv/AL9902/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL9811/metadata/ data/raw/Albatross_Iv/AL9811/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE9810/metadata/ data/raw/Delaware_Ii/DE9810/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE9809/metadata/ data/raw/Delaware_Ii/DE9809/metadata/
+aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL9804/metadata/ data/raw/Albatross_Iv/AL9804/metadata/
