@@ -202,24 +202,34 @@ data/raw/Pisces/PC1206/EK60/
 Total objects: 6264
 Total size: 102.19 GB
 data/raw/Henry_B._Bigelow/HB1201/EK60/
+# aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB1201/EK60/ data/raw/Henry_B._Bigelow/HB1201/EK60/
+# done on pi, wip
 Total objects: 12570
 Total size: 204.86 GB
 data/raw/Henry_B._Bigelow/HB1105/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB1105/EK60/ data/raw/Henry_B._Bigelow/HB1105/EK60/
+    # done on pi
 Total objects: 10431
 Total size: 169.84 GB
 data/raw/Delaware_Ii/DE1108/EK60/
 Total objects: 4281
 Total size: 69.45 GB
 data/raw/Henry_B._Bigelow/HB1103/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB1103/EK60/ data/raw/Henry_B._Bigelow/HB1103/EK60/
+    # done on pi
 Total objects: 8325
 Total size: 134.55 GB
 data/raw/Henry_B._Bigelow/HB1102/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB1102/EK60/ data/raw/Henry_B._Bigelow/HB1102/EK60/
+    # done on pi
 Total objects: 7103
 Total size: 115.62 GB
 data/raw/Delaware_Ii/DE1010/EK60/
 Total objects: 3621
 Total size: 58.43 GB
 data/raw/Henry_B._Bigelow/HB1006/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB1006/EK60/ data/raw/Henry_B._Bigelow/HB1006/EK60/
+    # done on pi
 Total objects: 5805
 Total size: 93.65 GB
 #
@@ -230,6 +240,8 @@ data/raw/Delaware_Ii/DE0107/EK500/
 Total objects: 894
 Total size: 1.67 GB
 data/raw/Henry_B._Bigelow/HB1002/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB1002/EK60/ data/raw/Henry_B._Bigelow/HB1002/EK60/
+    # done on pi, wip
 Total objects: 11491
 Total size: 187.09 GB
 data/raw/Henry_B._Bigelow/HB0905/EK60/
@@ -713,3 +725,9 @@ aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL9811/metadata/ data/raw/A
 aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE9810/metadata/ data/raw/Delaware_Ii/DE9810/metadata/
 aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE9809/metadata/ data/raw/Delaware_Ii/DE9809/metadata/
 aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL9804/metadata/ data/raw/Albatross_Iv/AL9804/metadata/
+
+
+# Google Bucket Info
+DESKTOP:/mnt/c/Users/user$ gsutil du -s gs://noaa-passive-bioacoustic/
+292918473535088  gs://noaa-passive-bioacoustic
+DESKTOP:/mnt/c/Users/user$
