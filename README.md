@@ -747,7 +747,6 @@ aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE9810/metadata/ data/raw/De
 aws s3 sync s3://noaa-wcsd-pds/data/raw/Delaware_Ii/DE9809/metadata/ data/raw/Delaware_Ii/DE9809/metadata/
 aws s3 sync s3://noaa-wcsd-pds/data/raw/Albatross_Iv/AL9804/metadata/ data/raw/Albatross_Iv/AL9804/metadata/
 
-
 # Google Bucket Info
 DESKTOP:/mnt/c/Users/user$ gsutil du -s gs://noaa-passive-bioacoustic/
 292918473535088  gs://noaa-passive-bioacoustic
