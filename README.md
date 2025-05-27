@@ -67,6 +67,8 @@ data/raw/Henry_B._Bigelow/HB2103/EK60/
 Total objects: 5428
 Total size: 253.82 GB
 data/raw/Henry_B._Bigelow/HB2102/EK60/
+# aws s3 sync s3://noaa-wcsd-pds/data/raw/Pisces/HB2102/EK60/ data/raw/Pisces/HB2102/EK60/
+# done on pi
 Total objects: 3484
 Total size: 168.73 GB
 data/raw/Pisces/PC2104/EK60/
@@ -75,8 +77,8 @@ data/raw/Pisces/PC2104/EK60/
 Total objects: 1171
 Total size: 55.07 GB
 data/raw/Henry_B._Bigelow/HB2101/EK60/
-# aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB2101/EK60/ data/raw/Henry_B._Bigelow/HB2101/EK60/
-# done on pi
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB2101/EK60/ data/raw/Henry_B._Bigelow/HB2101/EK60/
+    # done on pi
 Total objects: 14250
 Total size: 695.33 GB
 data/raw/Henry_B._Bigelow/HB2001/EK60/ # wip, aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB2001/EK60/ data/raw/Henry_B._Bigelow/HB2001/EK60/
