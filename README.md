@@ -58,9 +58,12 @@ data/raw/Henry_B._Bigelow/HB2204/EK60/
 Total objects: 1342
 Total size: 65.11 GB
 data/raw/Henry_B._Bigelow/HB2203/EK60/
+# aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB2203/EK60/ data/raw/Henry_B._Bigelow/HB2203/EK60/
+# done on pi
 Total objects: 282
 Total size: 13.76 GB
 data/raw/Henry_B._Bigelow/HB2202/EK60/
+# only partially downloaded, offload other cruises and continue with this
 # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB2202/EK60/ data/raw/Henry_B._Bigelow/HB2202/EK60/
 # done on pi
 Total objects: 4596
