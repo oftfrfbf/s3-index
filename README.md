@@ -38,12 +38,18 @@ data/raw/Henry_B._Bigelow/HB2303/EK80/
 Total objects: 11710
 Total size: 2.25 TB
 data/raw/Henry_B._Bigelow/HB2302/EK80/
+# aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB2302/EK80/ data/raw/Henry_B._Bigelow/HB2302/EK80/
+# done on pi
 Total objects: 1574
 Total size: 153.74 GB
 data/raw/Henry_B._Bigelow/HB2301/EK80/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB2301/EK80/ data/raw/Henry_B._Bigelow/HB2301/EK80/
+    # done on pi
 Total objects: 835
 Total size: 81.42 GB
 data/raw/Henry_B._Bigelow/HB2206/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB2206/EK60/ data/raw/Henry_B._Bigelow/HB2206/EK60/
+    # done on pi
 Total objects: 4044
 Total size: 196.89 GB
 data/raw/Pisces/PC2205/EK80/
@@ -52,18 +58,22 @@ data/raw/Pisces/PC2205/EK80/
 Total objects: 1556
 Total size: 564.09 GB
 data/raw/Henry_B._Bigelow/HB2205/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB2204/EK60/ data/raw/Henry_B._Bigelow/HB2204/EK60/
+    # done on pi
 Total objects: 1044
 Total size: 48.73 GB
 data/raw/Henry_B._Bigelow/HB2204/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB2204/EK60/ data/raw/Henry_B._Bigelow/HB2204/EK60/
+    # done on pi
 Total objects: 1342
 Total size: 65.11 GB
 data/raw/Henry_B._Bigelow/HB2203/EK60/
-# aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB2203/EK60/ data/raw/Henry_B._Bigelow/HB2203/EK60/
-# done on pi
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB2203/EK60/ data/raw/Henry_B._Bigelow/HB2203/EK60/
+    # done on pi
 Total objects: 282
 Total size: 13.76 GB
 data/raw/Henry_B._Bigelow/HB2202/EK60/
-# only partially downloaded, offload other cruises and continue with this
+# NOTE THIS!!! only partially downloaded, offload other cruises and continue with this
 # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB2202/EK60/ data/raw/Henry_B._Bigelow/HB2202/EK60/
 # done on pi
 Total objects: 4596
