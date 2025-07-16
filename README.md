@@ -20,11 +20,13 @@ data/raw/Henry_B._Bigelow/HB2404/EK80/
 Total objects: 246
 Total size: 48.02 GB
 data/raw/Henry_B._Bigelow/HB2403/EK80/
-# aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB2403/EK80/ data/raw/Henry_B._Bigelow/HB2403/EK80/
-# done on pi
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB2403/EK80/ data/raw/Henry_B._Bigelow/HB2403/EK80/
+    # done on pi
 Total objects: 372
 Total size: 69.69 GB
 data/raw/Henry_B._Bigelow/HB2402/EK80/
+# aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB2402/EK80/ data/raw/Henry_B._Bigelow/HB2402/EK80/
+# done on pi
 Total objects: 1648
 Total size: 302.28 GB
 data/raw/Henry_B._Bigelow/HB2401/EK80/
@@ -116,6 +118,8 @@ data/raw/Gordon_Gunter/GU1905/EK60/
 Total objects: 1208
 Total size: 118.0 GB
 data/raw/Henry_B._Bigelow/HB1904/EK60/
+# aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB1904/EK60/ data/raw/Henry_B._Bigelow/HB1904/EK60/
+# done on pi
 Total objects: 672
 Total size: 21.87 GB
 data/raw/Henry_B._Bigelow/HB1907/EK60/
