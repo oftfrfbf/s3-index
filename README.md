@@ -124,15 +124,18 @@ data/raw/Henry_B._Bigelow/HB1904/EK60/
 Total objects: 672
 Total size: 21.87 GB
 data/raw/Henry_B._Bigelow/HB1907/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB1907/EK60/ data/raw/Henry_B._Bigelow/HB1907/EK60/
 Total objects: 1755
 Total size: 58.85 GB
 data/raw/Henry_B._Bigelow/HB1903/EK60/
+    # aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB1903/EK60/ data/raw/Henry_B._Bigelow/HB1903/EK60/
 Total objects: 1095
 Total size: 17.41 GB
 data/raw/Henry_B._Bigelow/HB1902/EK60/
 Total objects: 1656
 Total size: 43.69 GB
 data/raw/Henry_B._Bigelow/HB1901/EK60/
+# aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB1901/EK60/ data/raw/Henry_B._Bigelow/HB1901/EK60/
 Total objects: 4497
 Total size: 170.9 GB
 data/raw/Henry_B._Bigelow/HB1806/EK60/
