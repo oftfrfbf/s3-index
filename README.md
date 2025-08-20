@@ -167,7 +167,7 @@ data/raw/Henry_B._Bigelow/HB1702/EK60/
 Total objects: 16032
 Total size: 260.82 GB
 data/raw/Henry_B._Bigelow/HB1701/EK60/
-# aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB1701/EK60/ data/raw/Henry_B._Bigelow/HB1701/EK60/
+# wip aws s3 sync s3://noaa-wcsd-pds/data/raw/Henry_B._Bigelow/HB1701/EK60/ data/raw/Henry_B._Bigelow/HB1701/EK60/
 Total objects: 3927
 Total size: 63.8 GB
 data/raw/Henry_B._Bigelow/HB1604/EK60/
